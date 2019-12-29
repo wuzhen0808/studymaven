@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.example</groupId>
+        <artifactId>studymaven</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <groupId>org.example</groupId>
+    <artifactId>studywagon</artifactId>
+    <dependencies>
+
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-aether-provider</artifactId>
+            <version>3.3.9</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-embedder</artifactId>
+            <version>3.6.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.aether</groupId>
+            <artifactId>aether-api</artifactId>
+            <version>0.9.0.M4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.maven.resolver</groupId>
+            <artifactId>maven-resolver-transport-wagon</artifactId>
+            <version>1.4.1</version>
+            <exclusions>
+<!--                <exclusion>-->
+<!--                    <groupId>org.apache.maven.wagon</groupId>-->
+<!--                    <artifactId>wagon-provider-api</artifactId>-->
+<!--                </exclusion>-->
+            </exclusions>
+        </dependency>
+
+<!--        <dependency>-->
+<!--                    <groupId>tmp</groupId>-->
+<!--                    <artifactId>not-exists</artifactId>-->
+<!--                    <version>1.0-SNAPSHOT</version>-->
+<!--                </dependency>-->
+
+        <dependency>
+            <groupId>org.apache.maven.wagon</groupId>
+            <artifactId>wagon-http</artifactId>
+            <version>3.3.4</version>
+            <classifier>shaded</classifier>
+        </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>org.apache.maven.wagon</groupId>-->
+<!--            <artifactId>wagon-providers</artifactId>-->
+<!--            <version>3.3.4</version>-->
+<!--        </dependency>-->
+        <!--
+        -->
+        <!--
+                -->
+    </dependencies>
+
+
+</project>
